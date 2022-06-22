@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Pokedex</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <h1 class="nav__logo"><a href="./index.html">Pokedex</a></h1>
+            <form class="nav__searcher">
+                <input class="nav__searcher nav__searcher--inputBar" type="text" name="name" id="name"/>
+                <label class="nav__searcher nav__searcher--inputBar--logo" for="name">
+                    <img src="./assets/searchIcon.svg" alt="Search Icon">
+                </label>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mainContent">
+            <!-- <div class="mainContent__table">
+                <table>
+                    <thead>
+                        <th></th>
+                        <th>#</th>
+                        <th>Pokemon</th>
+                        <th>Tipos</th>
+                        <th>PS</th>
+                        <th>Att</th>
+                        <th>Def</th>
+                        <th>Vel</th>
+                        <th>AtEsp</th>
+                        <th>DefEsp</th>
+                    </thead>
+                
+                    <tbody>
+                        <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" alt="imagen bulbasur"></td>
+                        <td>1</td>
+                        <td>Bulbasaur</td>
+                        <td>Planta Bicho</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                    </tbody>
+                </table>
+            </div> -->
+
+            <div class="mainContent__cards">
+               
+                <article class="card">
+                    <header class="card__header">
+                        <h2>#1</h2>
+                        <h3>Bulbasaur</h3>
+                        <div>
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" alt="imagen bulbasur">
+                            <p>Planta Bicho</p>
+                        </div>
+                    </header>
+
+
+                    <div class="card__stat">
+                        <p>PS</p>
+                        <div class="card__stat__container">
+                            <div class="stat hp"></div>
+                        </div>
+                        <p>45</p>
+                        
+                        <p>Att</p>
+                        <div class="card__stat__container">
+                            <div class="stat attack"></div>
+                        </div>
+                        <p>49</p>
+                        
+                        <p>Def</p>
+                        <div class="card__stat__container">
+                            <div class="stat defense"></div>
+                        </div>
+                        <p>49</p>
+                        
+                        <p>Vel</p>
+                        <div class="card__stat__container">
+                            <div class="stat speed"></div>
+                        </div>
+                        <p>45</p>
+                        
+                        <p>Att Esp</p>
+                        <div class="card__stat__container">
+                            <div class="stat specialAttack"></div>
+                        </div>
+                        <p>65</p>
+                        
+                        <p>Def Esp</p>
+                        <div class="card__stat__container">
+                            <div class="stat specialDefense"></div>
+                        </div>
+                        <p>65</p>
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <header class="card__header">
+                        <h2>#1</h2>
+                        <h3>Bulbasaur</h3>
+                        <div>
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" alt="imagen bulbasur">
+                            <p>Planta Bicho</p>
+                        </div>
+                    </header>
+
+
+                    <div class="card__stat">
+                        <p>PS</p>
+                        <div class="card__stat__container">
+                            <div class="stat hp"></div>
+                        </div>
+                        <p>45</p>
+                        
+                        <p>Att</p>
+                        <div class="card__stat__container">
+                            <div class="stat attack"></div>
+                        </div>
+                        <p>49</p>
+                        
+                        <p>Def</p>
+                        <div class="card__stat__container">
+                            <div class="stat defense"></div>
+                        </div>
+                        <p>49</p>
+                        
+                        <p>Vel</p>
+                        <div class="card__stat__container">
+                            <div class="stat speed"></div>
+                        </div>
+                        <p>45</p>
+                        
+                        <p>Att Esp</p>
+                        <div class="card__stat__container">
+                            <div class="stat specialAttack"></div>
+                        </div>
+                        <p>65</p>
+                        
+                        <p>Def Esp</p>
+                        <div class="card__stat__container">
+                            <div class="stat specialDefense"></div>
+                        </div>
+                        <p>65</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="./js/src.js"></script>
+</body>
+</html>

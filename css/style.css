@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+body > header {
+    padding: 10px;
+    background-color: #f44336;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__logo a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* BODY */
+
+
+
+/* CARDS */
+.mainContent{
+    padding: 1rem;
+}
+
+.mainContent__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .1rem;
+}
+
+.card__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.card__header > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 170px;
+    height: 200px;
+    padding: .3rem;
+}
+
+div.card__stat {
+    display: grid;
+    grid-template-columns: 55px 1fr 20px;
+    align-items: center;
+    justify-items: center;
+    font-size: 0.7rem;
+}
+
+
+.card__stat__container {
+    height: fit-content;
+    width: 90%; 
+    background-color: #ddd;
+    text-align: end;
+    
+    
+}
+
+
+
+.hp {height: 3px; width: 45%; background-color: #04AA6D;} 
+.attack {height: 3px;width: 49%; background-color: #f44336;} 
+.defense {height: 3px;width: 49%; background-color: #2196F3;}
+.speed {height: 3px;width: 45%; background-color: #f5f100;} 
+.specialAttack{height: 3px;width: 65%; background-color: #fc6a08;}
+.specialDefense{height: 3px;width: 65%; background-color: #8e04aa;}
