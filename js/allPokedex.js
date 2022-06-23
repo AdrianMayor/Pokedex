@@ -1,7 +1,9 @@
 "use strict";
 
 //const allPokemonUrl = "https://pokeapi.co/api/v2/pokemon?limit=1126";
-const allPokemonUrl = "https://pokeapi.co/api/v2/pokemon?limit=100";
+const allPokemonUrl = "https://pokeapi.co/api/v2/pokemon?limit=17";
+
+let initialArrayPoke = await allPokedex();
 
 async function getData(url) {
   try {
@@ -19,6 +21,7 @@ async function urlEachPokemon(array) {
     const newPokeArray = array.map((item) => {
       return item.url;
     });
+    console.log(newPokeArray);
     return newPokeArray;
   } catch (error) {
     console.error(error.message);
@@ -94,13 +97,23 @@ async function allPokedex() {
   //console.log(initialArray);
 
   const initialArrayResults = initialArray.results;
-  //console.log(initialArrayResults);
+  console.log(initialArrayResults);
 
-  const justUrl = await urlEachPokemon(initialArrayResults);
+  /* const justUrl = await urlEachPokemon(initialArrayResults);
   //console.log(justUrl);
 
   const getEachData = await dataEachPokemon(justUrl);
-  //console.log(getEachData);
+  //console.log(getEachData); */
+
+  return initialArrayResults;
+}
+
+async function searchPokedex(array) {
+  const justUrl = await urlEachPokemon(array);
+  console.log(justUrl);
+
+  const getEachData = await dataEachPokemon(justUrl);
+  console.log(getEachData);
   return getEachData;
 }
 
@@ -117,5 +130,7 @@ async function allPokedex() {
   const getEachData = await dataEachPokemon(justUrl);
   console.log(getEachData);
 } */
+/* console.log(initialArrayPoke);
+console.log(await searchPokedex(initialArrayPoke)); */
 
-export { allPokedex };
+export { searchPokedex, allPokedex, initialArrayPoke };

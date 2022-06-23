@@ -6,9 +6,15 @@
 
 /* HEADER */
 
+
+
 body > header {
     padding: 10px;
     background-color: #f44336;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .nav {
@@ -22,20 +28,23 @@ body > header {
     cursor: pointer;
 }
 
-/* BODY */
+/* MAIN */
+
+main{
+    margin-top: 40px;
+}
 
 
 
 /* CARDS */
 .mainContent{
     padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.mainContent__cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .1rem;
-}
 
 .card__header {
     display: flex;
@@ -44,6 +53,14 @@ body > header {
     align-items: center;
     
 }
+
+/* .cardButton {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #8e04aa;
+} */
+
 
 .card__header > div {
     width: 100%;
@@ -61,14 +78,26 @@ article.card {
     width: 160px;
     height: 180px;
     padding: .3rem;
+    position: relative;
+    
+}
+
+.card__header > div > img {
+    position:relative;
+   
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 div.card__stat {
     display: grid;
-    grid-template-columns: 55px 1fr 20px;
+    grid-template-columns: 55px 1fr ;
     align-items: center;
     justify-items: center;
     font-size: 0.7rem;
+
 }
 
 
@@ -89,3 +118,68 @@ div.card__stat {
 .speed {height: 3px;width: 45%;max-width: 100%; background-color: #f5f100;} 
 .specialAttack{height: 3px;width: 65%;max-width: 100%; background-color: #fc6a08;}
 .specialDefense{height: 3px;width: 65%;max-width: 100%; background-color: #8e04aa;}
+
+
+/* Pokemon Files */
+
+.mainPokeFiles > img{
+    display: block;
+    margin: 0 auto;
+   
+}
+
+.mainPokeFiles__types {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.mainPokeFiles__stat{
+    
+    display: grid;
+    grid-template-columns: 80px 1fr 20px;
+    row-gap: 0.1rem;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+
+
+.mainPokeFiles__stat .hp {height: 8px; width: 45%;max-width: 100%; background-color: #04AA6D;} 
+.mainPokeFiles__stat .attack {height: 8px;width: 49%;max-width: 100%; background-color: #f44336;} 
+.mainPokeFiles__stat .defense {height: 8px;width: 49%;max-width: 100%; background-color: #2196F3;}
+.mainPokeFiles__stat .speed {height: 8px;width: 45%;max-width: 100%; background-color: #f5f100;} 
+.mainPokeFiles__stat .specialAttack{height: 8px;width: 65%;max-width: 100%; background-color: #fc6a08;}
+.mainPokeFiles__stat .specialDefense{height: 8px;width: 65%;max-width: 100%; background-color: #8e04aa;}
+
+.mainPokeFiles__sprites{
+    padding: 1rem;
+}
+
+.mainPokeFiles__sprites > div{
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows:repeat(100px,200px);
+
+    grid-template-areas: 
+                'faceText backText'
+                'faceSprite backSprite';
+}
+
+#faceText{
+    grid-area: faceText;
+}
+
+#backText{
+    grid-area: backText;
+}
+
+#faceSprite{
+    grid-area: faceSprite;
+}
+
+#backSprite{
+    grid-area: backSprite;
+}
