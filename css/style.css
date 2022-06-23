@@ -58,8 +58,8 @@ article.card {
     justify-content: space-around;
     border: 1px solid black;
     border-radius: 5px;
-    width: 170px;
-    height: 200px;
+    width: 160px;
+    height: 180px;
     padding: .3rem;
 }
 
@@ -83,9 +83,9 @@ div.card__stat {
 
 
 
-.hp {height: 3px; width: 45%; background-color: #04AA6D;} 
-.attack {height: 3px;width: 49%; background-color: #f44336;} 
-.defense {height: 3px;width: 49%; background-color: #2196F3;}
-.speed {height: 3px;width: 45%; background-color: #f5f100;} 
-.specialAttack{height: 3px;width: 65%; background-color: #fc6a08;}
-.specialDefense{height: 3px;width: 65%; background-color: #8e04aa;}
+.hp {height: 3px; width: 45%;max-width: 100%; background-color: #04AA6D;} 
+.attack {height: 3px;width: 49%;max-width: 100%; background-color: #f44336;} 
+.defense {height: 3px;width: 49%;max-width: 100%; background-color: #2196F3;}
+.speed {height: 3px;width: 45%;max-width: 100%; background-color: #f5f100;} 
+.specialAttack{height: 3px;width: 65%;max-width: 100%; background-color: #fc6a08;}
+.specialDefense{height: 3px;width: 65%;max-width: 100%; background-color: #8e04aa;}
