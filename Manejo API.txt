@@ -45,4 +45,16 @@ array[
 
 
 
+
+array evoluciones[
+
+]
+
+
+TIPS :
+
 - Funcion allPoke -> solament se quede con el primer array de pokemons de nombre y url. Otra funcion aplica filtro sobre este array. TIP para filtrar por nombre
+
+- hacer funcion que recoja las stats sin entrar en las posiciones
+
+- hacer funcion que recoja las fotos sin entrar en posiciones
