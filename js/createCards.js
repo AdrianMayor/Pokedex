@@ -50,7 +50,8 @@ function createSpanishCard(poke) {
   });
 
   //console.log(cardArticle);
-
+  const cardContainer = document.createElement("div");
+  cardContainer.classList.add("cardContainer");
   const cardArticleHeader = document.createElement("header");
   cardArticleHeader.classList.add("card__header");
   const cardArticleHeaderH1 = document.createElement("h1");
@@ -65,9 +66,11 @@ function createSpanishCard(poke) {
   const cardArticleHeaderDivImg = document.createElement("img");
   cardArticleHeaderDivImg.setAttribute("src", poke.sprites.frontCard);
   cardArticleHeaderDivImg.setAttribute("alt", "Imagen Pokemon");
+  cardArticleHeaderDivImg.classList.add(poke.main.name);
   cardArticleHeaderDiv.append(cardArticleHeaderDivImg);
 
   const cardArticleHeaderDivTypes = document.createElement("div");
+  cardArticleHeaderDivTypes.classList.add("card__types");
   const cardArticleHeaderDivType1 = document.createElement("p");
   cardArticleHeaderDivType1.classList.add(poke.types[0]);
   cardArticleHeaderDivType1.innerHTML = `${poke.types[0]}`;
@@ -82,7 +85,8 @@ function createSpanishCard(poke) {
   cardArticleHeaderDiv.append(cardArticleHeaderDivTypes);
   cardArticleHeader.append(cardArticleHeaderDiv);
 
-  cardArticle.append(cardArticleHeader);
+  cardContainer.append(cardArticleHeader);
+  //cardArticle.append(cardArticleHeader);
 
   const cardArticleStats = document.createElement("div");
   cardArticleStats.classList.add("card__stat");
@@ -140,7 +144,9 @@ function createSpanishCard(poke) {
     divStat.append(divBar);
     cardArticleStats.append(divStat);
     /* cardArticleStats.append(pStat); */
-    cardArticle.append(cardArticleStats);
+    cardContainer.append(cardArticleStats);
+    cardArticle.append(cardContainer);
+    //cardArticle.append(cardArticleStats);
   }
 
   return cardArticle;
