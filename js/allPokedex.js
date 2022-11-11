@@ -1,7 +1,7 @@
 "use strict";
 
-const allPokemonUrl = "https://pokeapi.co/api/v2/pokemon?limit=1126";
-// const allPokemonUrl = "https://pokeapi.co/api/v2/pokemon?limit=100";
+//const allPokemonUrl = "https://pokeapi.co/api/v2/pokemon?limit=1126";
+ const allPokemonUrl = "https://pokeapi.co/api/v2/pokemon?limit=151";
 
 let initialArrayPoke = await allPokedex();
 
