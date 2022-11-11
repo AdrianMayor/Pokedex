@@ -22,7 +22,7 @@ tipos a los que pertenece.
 ● La Ficha también debe mostrar por lo menos una de las imágenes
 del pokémon en su versión frontal y posterior.
 
-- Live Site URL: [RockyPaper](https://adrianmayor.github.io/Pokedex/)
+- Live Site URL: [Click me](https://adrianmayor.github.io/Pokedex/)
 
 
 1 NOTA: la API a usar no proporciona un endpoint para buscar Pokémon por nombre
