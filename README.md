@@ -1,37 +1,36 @@
-# Pokemex
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Visualizador de Pokémon
+## Getting Started
 
-Mini aplicación web que debe permitir buscar y visualizardatos e imágenes de Pokémon.
+First, run the development server:
 
-Descripción
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-● La aplicación debe mostrar un único input que permita buscar
-Pokémon por nombre1.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-● Si se introduce un nombre que coincida con varios Pokémon debe
-mostrar los resultados. Si se introduce un nombre que sea
-inequívoco debe mostrar directamente la ficha de ese Pokémon.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-● La aplicación debe permitir visualizar una ficha del Pokémon
-seleccionado que muestre por lo menos los siguientes datos:
-nombre, altura, peso, puntos de vida, ataque, defensa, velocidad y
-tipos a los que pertenece.
+## Learn More
 
-● La Ficha también debe mostrar por lo menos una de las imágenes
-del pokémon en su versión frontal y posterior.
+To learn more about Next.js, take a look at the following resources:
 
-- Live Site URL: [Click me](https://adrianmayor.github.io/Pokedex/)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-1 NOTA: la API a usar no proporciona un endpoint para buscar Pokémon por nombre
-por lo que es necesario descargar la lista completa de la API antes de permitir
-buscar. Este es el endpoint que muestra todos los Pokémon:
-https://pokeapi.co/api/v2/pokemon?limit=1126
+## Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Recursos
-● PokéAPI2
-● Array.filter3
-● JSON4
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
