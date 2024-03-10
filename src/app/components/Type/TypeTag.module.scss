@@ -1,0 +1,47 @@
+@import "../../../styles/colors";
+
+@each $type, $color in $type-colors {
+	.typeTag_container--#{$type} {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+		width: 110px;
+		height: 32px;
+		border-radius: 20px;
+		font-family: "Montserrat";
+		text-transform: capitalize;
+		font-weight: 600;
+		font-size: 12px;
+		background-color: $color;
+		color: if(
+			$type ==
+				"normal" or
+				$type ==
+				"grass" or
+				$type ==
+				"water" or
+				$type ==
+				"poison" or
+				$type ==
+				"ghost" or
+				$type ==
+				"fight" or
+				$type ==
+				"psychic" or
+				$type ==
+				"steel" or
+				$type ==
+				"dragon" or
+				$type ==
+				"flying" or
+				$type ==
+				"ground" or
+				$type ==
+				"dark",
+			#fff,
+			#000
+		);
+	}
+}

@@ -1,0 +1,54 @@
+// Reset styles
+
+// Set margin and padding to 0 for all elements
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; // This ensures that the total size of elements includes padding and border, but not margin.
+}
+
+// Set default font to sans-serif
+body {
+	font-family: Arial, sans-serif;
+}
+
+// Remove bullet and numbering styles on list elements
+ul,
+ol {
+	list-style: none;
+}
+
+// Set appearance of form elements to their default values
+input,
+button,
+textarea,
+select {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	font: inherit;
+}
+
+// Set pointer cursor on button elements on hover
+button {
+	cursor: pointer;
+}
+
+// Set default appearance of anchor elements
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+// Remove text decoration on heading elements
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+// Other reset style rules can be added as needed.
