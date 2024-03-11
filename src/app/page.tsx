@@ -1,4 +1,4 @@
-import TypeTag, { ITypeTag } from "./components/Type/TypeTag";
+import TypeTag, { ITypeTag } from "./components/TypeTag/TypeTag";
 
 export default function Home() {
 	const test: ITypeTag["type"][] = [
